@@ -1,0 +1,83 @@
+.add-product-form-div{
+    margin-top: 50px;
+    display: flex; 
+    justify-content: center;
+}
+.add-product-form{
+    background-color: lightgray;
+    width: 800px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 15px;
+    border-radius: 10px;
+}
+.for-name{
+    display: flex;
+    align-items: center;
+    
+}
+.for-description{
+    display: flex;
+    align-items: center;
+}
+.for-image {
+    display: flex;
+    align-items: center;
+}
+.for-price{
+    display: flex;
+    align-items: center;
+}
+.for-button{
+    display: flex;
+    justify-content: center;
+}
+
+.add-product-name{
+    height: 20px;
+    width: 680px;
+    border-radius: 5px;
+    border: 2px solid green;
+}
+.add-product-text{
+    width: 100px;
+    font-weight: 400;
+}
+.add-product-image-link{
+    height: 20px;
+    width: 680px;
+    border-radius: 5px;
+    border: 2px solid green;
+}
+.add-product-description{
+    height: 100px;
+    width: 680px;
+    border-radius: 5px;
+    border: 2px solid green;
+    resize: none;
+}
+.add-product-submit-button{
+    width: 700px;
+    height: 60px;
+    background-color: lightgray;
+    color: darkgreen;
+    cursor: pointer;
+    border: 2px solid darkgreen;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    transition: all 0.2s ease-in;
+}
+.add-product-submit-button:hover{
+    color: white;
+    font-weight: 700;
+    background-color: darkgreen;
+}
+.add-product-price{
+    height: 20px;
+    width: 680px;
+    border-radius: 5px;
+    border: 2px solid green;
+}

@@ -1,0 +1,53 @@
+<%- include('../includes/head.ejs') %>
+
+<link rel="stylesheet" href="/css/add-product.css">
+</head>
+
+
+
+<body>
+    <%- include('../includes/navigation.ejs') %>
+    <main>
+        <div class="add-product-form-div">
+            <form action="/admin/add-product" class="add-product-form" method="POST">
+
+                <div class="for-name">
+                    <div class="add-product-text">
+                        Name : 
+                    </div>
+                    <div class="add-product-name-container">
+                        <input type="text" class="add-product-name" name="title">
+                    </div>
+                </div>
+
+                <div class="for-description">
+                    <div class="add-product-text">
+                        Description : 
+                    </div>
+                    <textarea name="description" class="add-product-description"></textarea>
+                </div>
+
+                <div class="for-image">
+                    <div class="add-product-text">
+                        Image Link : 
+                    </div>
+                    <input type="text" class="add-product-image-link" name="image_link">
+                </div>
+
+                <div class="for-price">
+                    <div class="add-product-text">
+                        Price :  
+                    </div>
+                    <input type="number" name="price" step="0.01" class="add-product-price">
+                </div>
+
+                <div class="for-button">
+                    <button class="add-product-submit-button" type="submit">Add Product</button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>

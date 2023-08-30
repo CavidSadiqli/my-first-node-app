@@ -1,0 +1,131 @@
+.products-div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.products-title{
+    display: flex;
+    justify-content: center;
+}
+.product-card{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    width: 200px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 5px;
+    position: relative;
+
+}
+
+.product-title{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+}
+.product_title{
+    font-weight: 400;
+    max-width: 180px;
+}
+.product__img {
+    display: flex;
+    justify-content: center;
+}
+.product-img {
+    width: 180px;
+    height: 150px;
+}
+.product-text {
+    display: flex;
+    justify-content: center;
+}
+.product_text{
+    width: 180px;
+}
+
+.product-button{
+    display: flex;
+    width: 180px;
+    justify-content: center;
+    gap: 10px;
+    justify-self: flex-end;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.product_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 40px;
+    background-color: lightgray;
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+    color: darkgreen;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.2s ease-in;
+}
+.product_button_edit {
+    width: 80px;
+    height: 40px;
+    background-color: lightgray;
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+    color: darkgreen;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+.product_button_delete {
+    width: 80px;
+    height: 40px;
+    background-color: lightgray;
+    border: 2px solid darkred;
+    border-radius: 5px;
+    color: darkred;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    box-sizing: unset;
+    padding: 0px;
+}
+
+
+
+.product_button:hover{
+    background-color: darkgreen;
+    color: white;
+}
+.product_button_edit:hover{
+    background-color: darkgreen;
+    color: white;
+}
+.product_button_delete:hover{
+    background-color: darkred;
+    color: white;
+}
+.pr_button{
+    cursor: pointer;
+    padding: 0px;
+    box-sizing: unset;
+}
+.card-totalprice-section{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.card-total-price--h1{
+    font-weight: 400;
+}

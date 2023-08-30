@@ -1,0 +1,42 @@
+<%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/details.css">
+</head>
+
+
+<body>
+    <%- include('../includes/navigation.ejs') %>
+    
+    <main class="details-main">
+        <div class="product-div">
+            <div class="title-div">
+                <h1 class="title">
+                    <%= product.title %>
+                </h1>
+            </div>
+            <div class="img--div">
+                <div class="img-div">
+                    <img src='<%= product.image_link %>' alt='<%= product.title %>'>
+                </div>
+            </div>
+            <div class="price-div">
+                <p class="price">
+                    <%= product.price %> AZN
+                </p>
+            </div>
+            <div class="desc-div">
+                <p class="desc">
+                    <%= product.description %>
+                </p>
+            </div>
+            <form class="but-div" method="post" action="/add-to-card">
+                <input type="hidden" name="productId" value="<%= product.id %>">
+                <button class="but" type="submit">
+                    Add to card
+                </button>
+            </form>
+        </div>
+    </main>
+
+
+</body>
+</html>
